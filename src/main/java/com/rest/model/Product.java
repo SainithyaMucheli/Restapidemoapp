@@ -14,7 +14,22 @@ public class Product {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String productname;
+	private String fuel;
+	private String genaration;
 	private double price;
+	public String getGenaration() {
+		return genaration;
+	}
+	public void setGenaration(String genaration) {
+		this.genaration = genaration;
+	}
+	public String getFuel() {
+		return fuel;
+	}
+	public void setFuel(String fuel) {
+		this.fuel = fuel;
+	}
+	
 	public int getId() {
 		return id;
 	}
